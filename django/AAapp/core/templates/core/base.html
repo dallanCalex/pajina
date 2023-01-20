@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> <link rel="stylesheet" href="/css/bootstrap.min.css"   crossorigin="anonymous">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible"content="IE=edge">
+      <title>{% block title %}{%endblock%} | FORMA DE PAGO </TITLE>
+      <meta name="description" content="Desarrollo de Sistemas de Informacion.">
+      <meta name="author"content="">
+         
+<header>
+<center>
+  <nav>
+<ul>
+<li><a href="{% url 'login'%}">Iniciar Sesion</a></li>
+<li><a href="{% url 'registro'%}">Crea tu cuenta</a></li>
+</ul>
+</nav>
+</center>
+</header>
+<header>
+<body>
+    <h1 data-text="FORMA DE PAGO">FORMA DE PAGO</h1>
+    <h2>AZ<spam>⚡</spam>AA</h2>
+</body>
+</header>
+
+<style>
+
+center{width:75%; display:table; background-color:#fde428; margin-bottom:0px;font-weight:500;}
+#logo{float:left; font-size:24px; text-transform:uppercase; color:#002e5b; font-weight:600; padding:20px 0px;}
+nav{width:auto; float:right;}
+nav ul{display:table; float:right;}
+nav ul li{float:left;}
+nav ul li:last-child{padding-right:0px;}
+nav ul li a{color:#002e5b; font-size:18px; padding: 25px 20px; display:inline-block; transition: all 0.5s ease 0s;}
+nav ul li a:hover{background-color:#002e5b; color:#fde428; transition: all 0.5s ease 0s;}
+nav ul li a:hover i{color:#fde428; transition: all 0.5s ease 0s;}
+nav ul li a i{padding-right:0px; color:#002e5b; transition: all 0.5s ease 0s;}
+.toggle-menu ul{display:table; width:0px;}
+.toggle-menu ul li{width:40%; height:0px; background-color:#002e5b; margin-bottom:0px;}
+.toggle-menu ul li:last-child{margin-bottom:0px;}
+
+
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #f7611e;
+background: linear-gradient(to right, #24243e, #141E30, #0f0c29); }
+
+h1 {
+text-transform: Uppercase;
+margin-bottom: .5em;
+font-family: 'Rubik', sans-serif;
+font-size: 6rem;
+color: #E4E5E6; }
+
+h1 {
+position: relative;
+background: linear-gradient(to right, #f38b09, #da7d08, #c26f07);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; }
+
+h1:before,
+h1:after {
+content: attr(data-text);
+position: absolute;
+top: 0;
+left: 0; }
+
+h1:before {
+z-index: -1;
+text-shadow: -0.001em -0.001em 1px rgba(255,255,255,.15)}
+
+h1:after {
+z-index: -2;
+text-shadow: 10px 10px 10px rgba(0,0,0,.5), 20px 20px 20px rgba(0,0,0,.4), 30px 30px 30px rgba(0,0,0,.1);
+mix-blend-mode: multiply; }
+
+h2 {
+margin-top: -1.15em;
+font-family: 'Pirata One', cursive;
+font-size: 3rem;
+color: #f7611e;
+text-align: center;}
+
+h2 spam {
+  font-size: .5em; 
+}
+</style>
+      </ul>
+     {% block content%}  {% endblock%}
+     
